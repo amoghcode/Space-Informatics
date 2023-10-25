@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Planets Form</title>
+</head>
+<link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+    /* CSS Reset */
+    body {
+        font-family: 'Baloo Bhai', cursive;
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url('img/bg.jpg');
+    }
+
+    .left {
+        display: inline-block;
+        /* border: 2px solid red; */
+        position: absolute;
+        left: 60px;
+        top: 20px;
+    }
+
+    .left img {
+        width: 136px;
+        filter: invert(100%);
+    }
+
+    .left div {
+        line-height: 19px;
+        font-size: 26px;
+        text-align: center;
+    }
+
+    .mid {
+        display: block;
+        width: 36%;
+        margin: 29px auto;
+        /* border: 2px solid green; */
+    }
+
+    .right {
+        position: absolute;
+        right: 34px;
+        top: 43px;
+        display: inline-block;
+        /* border: 2px solid yellow; */
+    }
+
+    
+
+    
+
+    .btn {
+        font-family: 'Baloo Bhai', cursive;
+        margin: 0px 9px;
+        background-color: black;
+        color: white;
+        padding: 4px 14px;
+        border: 2px solid grey;
+        border-radius: 10px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: rgb(31, 30, 30);
+    }
+
+    .container {
+        border: 2px solid white;
+        margin: 106px 80px;
+        padding: 100px;
+        width: 33%;
+        border-radius: 28px;
+        position: relative;
+  opacity: 0.65;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;  
+  filter: brightness(150%);
+  filter: contrast(150%);
+  background-image: url("img/Home_background.jpg");
+  height: 100%;
+
+    }
+
+    .form-group input {
+        font-family: 'Baloo Bhai', cursive;
+        text-align: center;
+        display: block;
+        width: 508px;
+        padding: 1px;
+        border: 2px solid black;
+        margin: 11px auto;
+        font-size: 25px;
+        border-radius: 8px;
+    }
+
+    .container h1 {
+        text-align: center;
+        color:aqua
+    }
+
+    .container button {
+        display: block;
+        width: 74%;
+        margin: 20px auto;
+    }
+    #back{
+        font-size: larger;
+        border-color: black;
+    }
+    #back button{
+        display:block;
+        width:20%;
+        height: 30%;
+        padding:5px;
+        margin: 2px 20px;
+        border:goldenrod;
+        border-radius: 15px;
+        background-color:greenyellow;
+        color:blueviolet;
+        font-size: 20px;
+        text-shadow: 20px;
+        border-color: black;
+        
+        
+
+    }
+    #back button:hover{
+        display:block;
+        width:20%;
+        height: 30%;
+        padding:5px;
+        margin: 2px 20px;
+        border:goldenrod;
+        border-radius: 15px;
+        background-color:blueviolet;
+        color:greenyellow;
+        font-size: 20px;
+        text-shadow: 20px;
+        border-color: black;
+    }
+</style>
+
+<body>
+    <br>
+    <br>
+    
+    <center>
+        <form action="Planets.html" id="back">
+            <button type="submit" id="button">Opps!Go Back</button>
+        </form>
+    <div class="container" >
+        
+        <h1>Insert the Information</h1>
+        <form action="insertp.php" method="post">
+            <div class="form-group">
+                <input type="number" name="planet_id" id="planet_id" placeholder="Enter Planets ID">
+            </div>
+            <div class="form-group">
+                <input type="text" name="planet_name" id="planet_name" placeholder="Enter Planets Name">
+            </div>
+            <div class="form-group">
+                <input type="number" name="solar_system_id" id="solar_system_id" placeholder="Enter it's Solar System ID ">
+            </div>
+            <div class="form-group">
+                <input type="text" name="solar_system_name" id="solar_system_name" placeholder="Enter it's Solar System name">
+            </div>
+            <div class="form-group">
+                <input type="number" name="star_id" id="star_id" placeholder="Enter it's Star ID ">
+            </div>
+            <div class="form-group">
+                <input type="text" name="star_name" id="star_name" placeholder="Enter it's Star name">
+            </div>
+            <div class="form-group">
+                <input type="number" name="location_no" id="location_no" placeholder="Enter it's location number">
+            </div>
+            <div class="form-group">
+                <input type="number" name="galaxy_id" id="galaxy_id" placeholder="Enter it's Galaxy ID ">
+            </div>
+            <div class="form-group">
+                <input type="text" name="galaxy_name" id="galaxy_name" placeholder="Enter it's Galaxy name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="dist_earth" id="dist_earth" placeholder="Enter it's distance from earth">
+            </div>
+            <div class="form-group">
+                <input type="text" name="size" id="size" placeholder="Enter it's size">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</center>
+</body>
+
+</html>
